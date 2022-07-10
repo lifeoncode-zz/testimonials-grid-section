@@ -103,6 +103,13 @@ body {
   position: absolute;
   top: 0;
   right: 100px;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .card:nth-of-type(1) .quote {
+    right: 20px;
+  }
 }
 
 .container .card:nth-of-type(2) {
@@ -154,5 +161,43 @@ body {
 .container .card .profile, .container .card .text {
   position: relative;
   z-index: 2;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container .card {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .container {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: block;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
