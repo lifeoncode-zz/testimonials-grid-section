@@ -1,0 +1,39 @@
+// typefaces
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+// reset browser css
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// colors
+$very-dark-blue: hsl(233, 47%, 7%); // (main background)
+$dark-desaturated-blue: hsl(244, 38%, 16%); // (card background)
+$soft-violet: hsl(277, 64%, 61%); // (accent)
+$white: hsl(0, 0%, 100%); // (main heading, stats)
+$slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75); // (main paragraph)
+$slightly-transparent-white-s: hsla(0, 0%, 100%, 0.6); // (stat headings)
+
+
+// mixins
+@mixin flex($align:center, $justify:center, $direction:row, $wrap:wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($columns:1fr, $gap:20px) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+}
