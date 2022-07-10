@@ -1,1 +1,158 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #cfcfcf;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.name {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.title {
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 15px 0 10px 0;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: white;
+  opacity: 0.4;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ecf2f8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.container .card {
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.container .card:nth-of-type(1) {
+  background-color: #7541c8;
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container .card:nth-of-type(1) .quote {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.container .card:nth-of-type(2) {
+  background-color: #48556a;
+}
+
+.container .card:nth-of-type(3) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.container .card:nth-of-type(3), .container .card:nth-of-type(4) {
+  background-color: white;
+}
+
+.container .card:nth-of-type(3) h1, .container .card:nth-of-type(3) p, .container .card:nth-of-type(3) .name, .container .card:nth-of-type(3) .title, .container .card:nth-of-type(4) h1, .container .card:nth-of-type(4) p, .container .card:nth-of-type(4) .name, .container .card:nth-of-type(4) .title {
+  color: #48556a;
+}
+
+.container .card:nth-of-type(5) {
+  background-color: #19212e;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.container .card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .card .profile, .container .card .text {
+  position: relative;
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */
